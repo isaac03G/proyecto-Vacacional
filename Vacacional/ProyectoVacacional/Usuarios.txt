@@ -1,0 +1,5 @@
+===============================
+NOMBRE: isaac
+EDAD: 19
+IDENTIFICACION: 1043297725
+ESTRATO: 3

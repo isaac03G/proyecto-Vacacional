@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Model">
+  <ClassDiagramComponents>
+    <Class name="Factura" package="Model" visibility="public" isAbstract="true" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="horasConsumo" type="int" visibility="protected"/>
+        <Field name="valorKWH" type="double" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="horasConsumo"/>
+          <Argument type="double" name="valorKWH"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getHorasConsumo" returnType="int" visibility="public"/>
+        <Method name="setHorasConsumo" returnType="void" visibility="public">
+          <Argument type="int" name="horasConsumo"/>
+        </Method>
+        <Method name="getValorKWH" returnType="double" visibility="public"/>
+        <Method name="setValorKWH" returnType="void" visibility="public">
+          <Argument type="double" name="valorKWH"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Usuario" package="Model" visibility="public" isAbstract="true" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="protected"/>
+        <Field name="edad" type="int" visibility="protected"/>
+        <Field name="identificacion" type="int" visibility="protected"/>
+        <Field name="estrato" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="int" name="identificacion"/>
+          <Argument type="int" name="estrato"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getEdad" returnType="int" visibility="public"/>
+        <Method name="setEdad" returnType="void" visibility="public">
+          <Argument type="int" name="edad"/>
+        </Method>
+        <Method name="getIdentificacion" returnType="int" visibility="public"/>
+        <Method name="setIdentificacion" returnType="void" visibility="public">
+          <Argument type="int" name="identificacion"/>
+        </Method>
+        <Method name="getEstrato" returnType="int" visibility="public"/>
+        <Method name="setEstrato" returnType="void" visibility="public">
+          <Argument type="int" name="estrato"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

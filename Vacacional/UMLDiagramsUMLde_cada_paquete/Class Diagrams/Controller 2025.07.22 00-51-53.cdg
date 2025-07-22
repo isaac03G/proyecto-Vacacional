@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Controller">
+  <ClassDiagramComponents>
+    <Class name="UsuarioController" package="Controller" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="listaUsuarios" type="ArrayList&lt;Usuario&gt;" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="int" name="identificacion"/>
+          <Argument type="int" name="estrato"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="PedirUsuario" returnType="void" visibility="public"/>
+        <Method name="creacionLista" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="int" name="identificacion"/>
+          <Argument type="int" name="estrato"/>
+        </Method>
+        <Method name="crearArchivo" returnType="void" visibility="public"/>
+        <Method name="guardarInfoArchivo" returnType="void" visibility="public"/>
+        <Method name="actualizarUsuario" returnType="void" visibility="public">
+          <Argument type="int" name="idBuscado"/>
+          <Argument type="String" name="nuevoNombre"/>
+          <Argument type="int" name="nuevaEdad"/>
+          <Argument type="int" name="nuevoEstrato"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
