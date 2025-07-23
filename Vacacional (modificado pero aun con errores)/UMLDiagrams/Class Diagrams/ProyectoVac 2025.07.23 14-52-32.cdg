@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="ProyectoVac">
+  <ClassDiagramComponents>
+    <Class name="Factura" package="ProyectoVac" visibility="public" isAbstract="true" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="horasConsumo" type="int" visibility="protected"/>
+        <Field name="valorKWH" type="double" visibility="protected"/>
+        <Field name="estrato" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="horasConsumo"/>
+          <Argument type="double" name="valorKWH"/>
+          <Argument type="int" name="estrato"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getHorasConsumo" returnType="int" visibility="public"/>
+        <Method name="setHorasConsumo" returnType="void" visibility="public">
+          <Argument type="int" name="horasConsumo"/>
+        </Method>
+        <Method name="getValorKWH" returnType="double" visibility="public"/>
+        <Method name="setValorKWH" returnType="void" visibility="public">
+          <Argument type="double" name="valorKWH"/>
+        </Method>
+        <Method name="getEstrato" returnType="int" visibility="public"/>
+        <Method name="setEstrato" returnType="void" visibility="public">
+          <Argument type="int" name="estrato"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="FacturaController" package="ProyectoVac" visibility="public" xPosition="20.0" yPosition="399.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="horasConsumo"/>
+          <Argument type="double" name="valorKWH"/>
+          <Argument type="int" name="estrato"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="procesoFactura" returnType="void" visibility="public">
+          <Argument type="int" name="estrato"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="InicioDeSesion" package="ProyectoVac" visibility="public" xPosition="20.0" yPosition="589.0">
+      <Fields>
+        <Field name="controller" type="UsuarioController" visibility="protected"/>
+        <Field name="nombreingresado" type="String" visibility="public"/>
+        <Field name="identificacioningresada" type="int" visibility="public"/>
+        <Field name="jButtonIniciarSesion" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButtonRegistrar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel10" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel9" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabelMensaje" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabelMensaje2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabelMensaje3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel10" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel11" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel2" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel3" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel4" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel5" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel6" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jTextFieldIdentificacion" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextFieldNombre" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jTextFieldNombreActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButtonRegistrarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButtonIniciarSesionActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jTextFieldIdentificacionActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ProcesoDeFactura" package="ProyectoVac" visibility="public" xPosition="1831.0" yPosition="20.0">
+      <Fields>
+        <Field name="controller" type="UsuarioController" visibility="package"/>
+        <Field name="controller2" type="FacturaController" visibility="package"/>
+        <Field name="horasConsumoIngresadas" type="int" visibility="public"/>
+        <Field name="nombreIngresado" type="String" visibility="public"/>
+        <Field name="edadIngresada" type="int" visibility="public"/>
+        <Field name="identificacionIngresada" type="int" visibility="public"/>
+        <Field name="estratoIngresado" type="int" visibility="public"/>
+        <Field name="jButtonCerrar" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButtonDocumento" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButtonGuardarInfo" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButtonTipsDeAhorro" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel10" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel11" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel9" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabelArchivoCreado" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabelError" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabelInfoConsumo" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabelMensajeHoras" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabelUbicacionArchivo1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel10" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel2" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel3" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel4" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jTextFieldEdad" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextFieldEstrato" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextFieldHorasConsumo" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextFieldIdentificacion" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextFieldNombre" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jTextFieldHorasConsumoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButtonTipsDeAhorroActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButtonDocumentoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButtonCerrarActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButtonGuardarInfoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jTextFieldNombreActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jTextFieldEdadActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jTextFieldIdentificacionActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jTextFieldEstratoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Registrarce" package="ProyectoVac" visibility="public" xPosition="1207.0" yPosition="-43.0">
+      <Fields>
+        <Field name="controller" type="UsuarioController" visibility="package"/>
+        <Field name="controller2" type="FacturaController" visibility="package"/>
+        <Field name="nombreIngresado" type="String" visibility="public"/>
+        <Field name="edadIngresada" type="int" visibility="public"/>
+        <Field name="identificacionIngresada" type="int" visibility="public"/>
+        <Field name="estratoIngresado" type="int" visibility="public"/>
+        <Field name="jButtonActualizarInfo" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButtonGuardarInfo" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButtonVolverAlInicio" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel10" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel11" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel9" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabelMensaje" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabelMensaje2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabelMensaje3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel10" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel11" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel14" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel2" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel3" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel4" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel5" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPanel6" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jTextFieldEdad" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextFieldEstrato" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextFieldIdentificacion" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextFieldNombre" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jTextFieldNombreActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jTextFieldEstratoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButtonVolverAlInicioActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButtonGuardarInfoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButtonActualizarInfoActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="limpiarCampos" returnType="void" visibility="private"/>
+        <Method name="jTextFieldEdadActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jTextFieldIdentificacionActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="TipsDeAhorro" package="ProyectoVac" visibility="public" xPosition="732.0" yPosition="872.0">
+      <Fields>
+        <Field name="bg" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="imagen_01" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="inicio" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="separador1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="separador10" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="separador11" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="separador2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="separador3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="separador4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="separador5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="separador6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="separador7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="separador8" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="separador9" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="tip1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="tip10" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="tip2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="tip3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="tip4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="tip5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="tip6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="tip7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="tip8" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="tip9" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+      </Methods>
+    </Class>
+    <Class name="Usuario" package="ProyectoVac" visibility="public" isAbstract="true" xPosition="441.0" yPosition="20.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="protected"/>
+        <Field name="edad" type="int" visibility="protected"/>
+        <Field name="identificacion" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="int" name="identificacion"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="setNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+        </Method>
+        <Method name="getEdad" returnType="int" visibility="public"/>
+        <Method name="setEdad" returnType="void" visibility="public">
+          <Argument type="int" name="edad"/>
+        </Method>
+        <Method name="getIdentificacion" returnType="int" visibility="public"/>
+        <Method name="setIdentificacion" returnType="void" visibility="public">
+          <Argument type="int" name="identificacion"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="UsuarioController" package="ProyectoVac" visibility="public" xPosition="560.0" yPosition="351.0">
+      <Fields>
+        <Field name="listaUsuarios" type="ArrayList&lt;Usuario&gt;" visibility="public" isStatic="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="int" name="identificacion"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="PedirUsuario" returnType="void" visibility="public"/>
+        <Method name="creacionLista" returnType="void" visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="int" name="identificacion"/>
+          <Argument type="int" name="estrato"/>
+        </Method>
+        <Method name="crearArchivo" returnType="void" visibility="public"/>
+        <Method name="guardarInfoArchivo" returnType="void" visibility="public"/>
+        <Method name="actualizarUsuario" returnType="void" visibility="public">
+          <Argument type="int" name="idBuscado"/>
+          <Argument type="String" name="nuevoNombre"/>
+          <Argument type="int" name="nuevaEdad"/>
+          <Argument type="int" name="nuevoEstrato"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="controller" source="ProyectoVac.Registrarce" target="ProyectoVac.UsuarioController" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="listaUsuarios" source="ProyectoVac.UsuarioController" target="ProyectoVac.Usuario" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Usuario&gt;"/>
+    <HasRelation name="controller" source="ProyectoVac.InicioDeSesion" target="ProyectoVac.UsuarioController" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="controller" source="ProyectoVac.ProcesoDeFactura" target="ProyectoVac.UsuarioController" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="ProyectoVac.UsuarioController" target="ProyectoVac.Usuario"/>
+    <HasRelation name="controller2" source="ProyectoVac.ProcesoDeFactura" target="ProyectoVac.FacturaController" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="ProyectoVac.FacturaController" target="ProyectoVac.Factura"/>
+    <HasRelation name="controller2" source="ProyectoVac.Registrarce" target="ProyectoVac.FacturaController" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
